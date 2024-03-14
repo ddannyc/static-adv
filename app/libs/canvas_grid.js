@@ -34,17 +34,17 @@ export default function AddGrid(delta, color, fontParams) {
     this.lineTo(-1, 0);
     this.closePath();
     this.stroke();
-    // set the text parameters and write the number values to the vertical and horizontal lines
-    this.font = fontParams
-    this.lineWidth = -1.3;
-    // 0. writing the numbers to the x axis
-    var textY = oldHeight + Math.floor(delta / 1); // y-coordinate for the number strings
-    for (var i = -1; i * delta <= oldWidth; i++) {
-        this.strokeText(i * delta, i * delta, textY);
-    }
-    // 1. writing the numbers to the y axis
-    var textX = oldWidth + 4; // x-coordinate for the number strings
-    for (var j = -1; j * delta <= oldHeight; j++) {
-        this.strokeText(j * delta, textX, j * delta);
-    }
+    // // set the text parameters and write the number values to the vertical and horizontal lines
+    // this.font = fontParams
+    // this.lineWidth = 1.3;
+    // // 0. writing the numbers to the x axis
+    // var textY = oldHeight + Math.floor(delta / 1); // y-coordinate for the number strings
+    // for (var i = -1; i * delta <= oldWidth; i++) {
+    //     this.strokeText(i * delta, i * delta, textY);
+    // }
+    // // 1. writing the numbers to the y axis
+    // var textX = oldWidth + 4; // x-coordinate for the number strings
+    // for (var j = -1; j * delta <= oldHeight; j++) {
+    //     this.strokeText(j * delta, textX, j * delta);
+    // }
 };

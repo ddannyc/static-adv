@@ -28,7 +28,7 @@ export default function HomePage() {
     }, [])
     return (
         <div>
-            <canvas id="canvas" width="1000px" height="1000px"></canvas>
+            <canvas id="canvas" width="1280px" height="1080px"></canvas>
         </div>
     )
 }
